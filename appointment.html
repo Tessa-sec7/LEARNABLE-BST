@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Appointment</title>
+        <link rel="stylesheet" href="Css/book-appt.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    </head>
+    <body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo"><img src="images-icons/Vector.png" alt="logo">MEDORA</div>
+            <div class="menu">
+                <a href="dashboard.html"><i class="fa fa-th-large"></i>Dashboard</a>
+                <a href="appointment.html" class="active"><i class="fa fa-calendar-check"></i>Appointment</a>
+                <a href="#dashboard"><i class="fa fa-user-cog"></i>Profile & Access Control</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-links">
+                <button>Home</button>
+                <button>Contact</button>
+                <i class="fa fa-bell"></i>
+            </div>
+            <div class="user-info">
+                <img src="images-icons/medora-icon.jpg" alt="User">
+                <div class="user-text">
+                    <span>Patient Name</span>
+                </div>
+            </div>
+            </header>
+
+            <!-- Welcome Section -->
+            <section class="main">
+                <h1>Welcome</h1>
+                <p><u>Don't Miss Out, Schedule Your Appointment Today!</u></p>
+            </section>
+
+            <!-- Departments Section -->
+            <section class="departments">
+                <h2>Departments</h2>
+                <div class="department-icons">
+
+                    <div class="dept">
+                        <i class="fa fa-bone"></i>
+                        <span>Orthopedics</span>
+                    </div>
+
+                    <div class="dept">
+                        <i class="fa fa-heartbeat"></i>
+                        <span>Cardiology</span>
+                    </div>
+
+                    <div class="dept">
+                        <i class="fa fa-hand-paper"></i>
+                        <span>Allergy</span>
+                    </div>
+
+                    <div class="dept">
+                        <i class="fa fa-briefcase-medical"></i>
+                        <span>General Medicine</span>
+                    </div>
+
+                    <div class="dept">
+                        <i class="fa fa-user-md"></i>
+                        <span>Endocrinology</span>
+                    </div>
+
+                    <div class="dept">
+                        <i class="fa fa-file-medical"></i>
+                        <span>Dermatology</span>
+                    </div>
+
+                    <div class="dept">
+                        <i class="fa fa-tooth"></i>
+                        <span>Urology</span>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <!-- Book Appointment Button -->
+            <button onclick="window.location.href='department.html'" class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+    </body>
+</html>

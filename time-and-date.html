@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="Css/book-appt.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-dept">⚕ MEDORA</div>
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-btn">Home</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+                <i class="fa fa-bell"></i>
+                <span class="profile">
+                    <img src="images-icons/medora-icon.jpg" alt="Profile" class="avatar">
+                    <div class="profile-images-icons/medora-icon.jpginfo">
+                        <p class="name">Patient Name</p>
+                        <p class="email">patientemail@gmail.com</p>
+                    </div>
+                </span>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <h2><u>Select Date and Time</u></h2>
+            <div>Please Choose The Date And Time For Your Appointment.</div>
+
+            <!-- Date -->
+            <label for="appointment-date" class="label">Date:</label>
+            <input type="date" id="appointment-date" class="date-dropdown" min="2025-08-14" required>
+
+            <!-- Time -->
+            <label for="appointment-time" class="label">Time:</label>
+            <input type="time" id="appointment-time" class="time-dropdown" min="09:00" max="19:00" required>
+
+            <!-- Next Button -->
+            <button class="next-btn" id="next-btn" >Next</button>
+        </main>
+        <script src="JavaScript/time-and date.js"></script>
+    </div>
+</body>
+</html>

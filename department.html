@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="Css/book-appt.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-dept">⚕ MEDORA</div>
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-btn">Home</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+                <i class="fa fa-bell"></i>
+                <span class="profile">
+                    <img src="images-icons/medora-icon.jpg" alt="Profile">
+                    <div class="profile-info">
+                        <p class="name">Patient Name</p>
+                        <p class="email">patientemail@gmail.com</p>
+                    </div>
+                </span>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <h2><u>Select Department:</u></h2>
+            <div>Please Choose The Department You Want To Book An Appointment With.</div>
+
+            <label for="department" class="label">Department</label>
+            <select id="department" class="dropdown" required>
+                <option>Select Department</option>
+                <option>Orthopedics</option>
+                <option>General Medicine</option>
+                <option>Cardiology</option>
+                <option>Endocrinology</option>
+                <option>Allergy</option>
+                <option>Urology</option>
+                <option>Dermatology</option>
+            </select>
+
+            <button class="next-btn" id="next-btn">Next</button>
+        </main>
+        <script src="JavaScript/department.js"></script>
+    </div>
+</body>
+</html>
