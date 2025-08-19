@@ -605,13 +605,13 @@ hr {
 .error-text {
   color: var(--body-text);
   font-weight: bold;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .error-icon {
   font-size: 9rem;         
     color: var(--error);
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .retry-btn {
@@ -686,9 +686,9 @@ hr {
   }
 
   .search-bar {
-    max-width: 90px;
+    max-width: 50px;
     max-height: 30px;
-    margin-left: 5px;
+    margin-left: 3px;
   }
 
   .search-bar i {
@@ -696,7 +696,7 @@ hr {
   }
 
   .search-bar input {
-    width: 50px;
+    width: 10px;
     height: 20px;
     padding: 8px;
     border-radius: 4px;
@@ -705,12 +705,13 @@ hr {
 
   .nav-links button {
     font-size: 0.8em;
-    padding: 8px 15px ;
+    padding: 7px 10px;
+    gap: 5px;
   }
 
   .nav-links i {
     font-size: 0.8em;
-    padding: 8px 15px;
+    padding: 8px 13px;
     margin: auto 20px;
   }
 
@@ -765,18 +766,22 @@ hr {
   }
 
   .logo-dept {
-    font-size: 1.2rem;
-    margin-left: 20px;
-    text-align: left;
+    font-size: 1rem;
+    margin-left: 10px;
+    text-align: center;
   }
 
-  .nav-btn {
+  .disable {
   display: none;
   }
 
+  .nav-btn {
+    padding: 7px 10px;
+  }
+
   .nav i {
-    margin: auto 8px;
-    padding: 10px;
+    margin: 2px;
+    padding: 8px;
   }
 
   .profile img {
@@ -790,6 +795,10 @@ hr {
 
   .email {
     display: none;
+  }
+
+  .name {
+    font-size: 0.8rem;
   }
 
   .main h2 {
@@ -816,7 +825,7 @@ hr {
   .reminder {
   position: absolute;
   top: 270px;
-  left: 380px;
+  left: 310px;
   }
 }
 

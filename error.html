@@ -18,7 +18,7 @@
             </div>
             <nav class="nav">
                 <a href="#home" class="nav-btn">Home</a>
-                <a href="#contact" class="nav-btn">Contact</a>
+                <a href="#contact" class="nav-btn disable">Contact</a>
                 <i class="fa fa-bell"></i>
                 <span class="profile">
                     <img src="images-icons/medora-icon.jpg" alt="Profile" class="avatar">
@@ -34,9 +34,17 @@
             <div class="error-icon"><i class="fa fa-exclamation-triangle"></i></div>
             <div class="error-text">We Couldn't Confirm Your Appointment This Time. If You're Cencelling, A Quick Note From You Will Help Us Serve You Better.</div>
 
+            <select class="dropdown" required>
+                <option>Select Reason For Cancellation</option>
+                <option>Schedule Conflict/ Not Available at the Time</option>
+                <option>Feeling Better/ No longer Need Appointment</option>
+                <option>Insurance/ Payment Issue</option>
+                <option>Transportation or Distance Problem</option>
+            </select>
+
             <div class="error-button-group">
                 <button class="retry-btn" onclick="window.location.href='appointment.html'">Retry</button>
-                <button class="contact-btn" onclick="window.location.href='messageing.html'">Contact Support</button>
+                <button class="contact-btn" onclick="window.location.href='messaging.html'">Contact Support</button>
             </div>
         </main>
 
