@@ -6,6 +6,9 @@
         <title>Book Appointment</title>
         <link rel="stylesheet" href="Css/book-appt.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     </head>
     <body>
     <div class="dashboard-container">
@@ -13,9 +16,15 @@
         <aside class="sidebar">
             <div class="logo"><img src="images-icons/Vector.png" alt="logo">MEDORA</div>
             <div class="menu">
-                <a href="dashboard.html"><i class="fa fa-th-large"></i>Dashboard</a>
+                <a href="user.html"><i class="fa fa-th-large"></i>Dashboard</a>
                 <a href="appointment.html" class="active"><i class="fa fa-calendar-check"></i>Appointment</a>
-                <a href="#dashboard"><i class="fa fa-user-cog"></i>Profile & Access Control</a>
+                <a href="#health-record"><i class="fa fa-file-text"></i>Health Record</a>
+                <a href="#messaging"><i class="fa fa-paper-plane"></i>Messages</a>
+                <a href="#access-control"><i class="fa fa-user"></i>Profile & Access Control</a>
+                <div class="move-down">
+                    <a href="#settigs"><i class="fa fa-cog"></i>Settings</a>
+                    <a href="landing.html"><i class="fa fa-sign-out"></i>Logout</a>
+                </div>
             </div>
         </aside>
 
@@ -27,14 +36,14 @@
                 <input type="text" placeholder="Search">
             </div>
             <div class="nav-links">
-                <button>Home</button>
+                <button onclick="window.location.href='home.html'">Home</button>
                 <button>Contact</button>
                 <i class="fa fa-bell"></i>
             </div>
             <div class="user-info">
                 <img src="images-icons/medora-icon.jpg" alt="User">
                 <div class="user-text">
-                    <span>Patient Name</span>
+                    <span id="dashboard-username">Patient Name</span>
                 </div>
             </div>
             </header>
@@ -51,37 +60,37 @@
                 <div class="department-icons">
 
                     <div class="dept">
-                        <i class="fa fa-bone"></i>
+                        <img src="images-icons/icon-park_orthopedic.png"  class="dept-icon"/>
                         <span>Orthopedics</span>
                     </div>
 
                     <div class="dept">
-                        <i class="fa fa-heartbeat"></i>
+                        <img src="images-icons/medical-icon_i-cardiology.png"  class="dept-icon"/>
                         <span>Cardiology</span>
                     </div>
 
                     <div class="dept">
-                        <i class="fa fa-hand-paper"></i>
+                        <img src="images-icons/mdi_allergy.png"  class="dept-icon"/>
                         <span>Allergy</span>
                     </div>
 
                     <div class="dept">
-                        <i class="fa fa-briefcase-medical"></i>
+                        <img src="images-icons/ant-design_medicine-box-filled.png"  class="dept-icon"/>
                         <span>General Medicine</span>
                     </div>
 
                     <div class="dept">
-                        <i class="fa fa-user-md"></i>
+                        <img src="images-icons/healthicons_endocrinology.png"  class="dept-icon"/>
                         <span>Endocrinology</span>
                     </div>
 
                     <div class="dept">
-                        <i class="fa fa-file-medical"></i>
+                        <img src="images-icons/material-symbols_dermatology-rounded.png"  class="dept-icon"/>
                         <span>Dermatology</span>
                     </div>
 
                     <div class="dept">
-                        <i class="fa fa-tooth"></i>
+                        <img src="images-icons/urology1.png"  class="dept-icon"/>
                         <span>Urology</span>
                     </div>
 
