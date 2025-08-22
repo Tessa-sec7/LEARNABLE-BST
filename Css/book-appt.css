@@ -182,7 +182,7 @@ header {
   margin-right: 10px;
   position: absolute;
   top: 26px;
-  right: 150px;
+  right: 180px;
 }
 
 .user-text {
@@ -191,7 +191,7 @@ header {
 
 .user-text span {
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: bold;
     color: #095f7f;
 }
 

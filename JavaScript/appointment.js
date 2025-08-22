@@ -1,10 +1,10 @@
-const username = localStorage.getItem("username");
-const useremail = localStorage.getItem("useremail");
+// const username = localStorage.getItem("username");
+// const useremail = localStorage.getItem("useremail");
 
-if (username && useremail) {
-    document.getElementById("userName").textContent = username;
-    document.getElementById("userEmail").textContent = useremail;
-} else {
-    document.getElementById("userName").textContent = "No name found.";
-    document.getElementById("userEmail").textContent = "No email found.";
-}
+// if (document.getElementById("userName")) {
+//     document.getElementById("userName").textContent = username ? username : "No name found";
+// }
+
+// if (document.getElementById("userEmail")) {
+//     document.getElementById("userEmail").textContent = useremail ? useremail : "No email found";
+// }
