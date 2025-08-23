@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* background-color: #e7f7fd; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19.2px;
+    color: #11ade6;
+    background-color: #e6e7e7;
+    font-size: 0.625rem;
+}
+
+.logo {
+    display: flex;
+    gap: 3.2px
+}
+
+.nav-items {
+    display: flex;
+    gap: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 1px solid #24d2d8;
+    border-radius: 22px;
+}
+
+.button-one {
+    border: #095f7f;
+    background-color: #095f7f;
+    padding: 2px 12px;
+}
+
+.button-one a {
+    color: #e6e7e7;
+}
+
+.button-two {
+    background-color: #b0b5b6;
+}
+
+.button-two a {
+    color: #010b0d;
+    padding: 2px 12px;
+}
+
+.button-three {
+    background-color: #11ade6;
+    color: #e6e7e7;
+    padding: 10px;
+}
+
+.button-three a {
+    color: #e6e7e7;
+}
+
+.button-four {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.button-four a {
+    color: #11ade6;
+}
+
+.button-five {
+    color: #e6e7e7;
+    background-color: #11ade6;
+    padding: 4px 6px;
+    /* font-size: 0.75rem; */
+}
+
+.button-six {
+    color: #e6e7e7;
+    background-color: #11ade6;
+    padding: 4px 6px;
+    /* font-size: 0.75rem; */
+}
+
+.no-button {
+    background-color: #e6e6e6;
+    border: #e6e6e6;
+}
+
+.no-button a{
+    color: #24d2d8;
+}
+
+.screen1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-image: url(./LEARNABLE-BST/Images/bg.jpg);
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 48px ;
+    
+}
+
+/* apply blurred effect to screen later */
+
+.main-text {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.sub-text {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+#font-color {
+    color: #11ade6;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.butt {
+    display: flex;
+    gap: 10px;
+}
+
+.screen2 {
+    background-color: #e7f7fd;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+
+.depp {
+    display: flex;
+    padding: 40px;
+
+}
+.our {
+    font-size: 20px;
+}
+
+.departments {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5.625rem;
+}
+
+.dep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.5;
+}
+
+#dep-color {
+    color: #11ade6;
+}
+
+.specc {
+    flex: 1;
+    display: flex;
+    padding: 30px;
+    text-align: center;
+}
+
+.specialists {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 56.25px;
+    font-size: 10px;
+}
+
+.meet {
+    font-size: 20px;
+    display: flex;
+    
+}
+
+.spec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#name {
+    font-size: 0.9rem;
+}
+
+.special {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.screen3 {
+    height: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 0.6rem;
+    margin: 0;
+}
+
+.bg2 {
+    background-image: url(./LEARNABLE-BST/Images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg3 {
+    background-image: url(./LEARNABLE-BST/Images/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg4 {
+    background-image: url(./LEARNABLE-BST/Images/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.slide {
+    align-items: left;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 2px;
+    
+}
+
+.did {
+    text-align: center;
+    padding: 5px;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    background-color: #11ade6;
+    padding: 5px;
+}
+
+.middle {
+    text-align: center;
+    padding: 5px;
+}
+
+.side {
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+    gap: 20px;
+}
+
+.about-us {
+    background-color: #e7f7fd;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 0.6rem;
+}
+
+.why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    margin-bottom: 5.625rem;
+}
+
+.reasons {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    margin-bottom: 5.625rem;
+}
+
+.reason {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#bolden{
+    font-weight: 700;
+}
+
+.screen4 {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* width: 100%; */
+}
+
+.inner-screen {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.stay {
+    background-color: #343f42;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    color: #e7f7fd;
+    font-size: 0.625rem;
+}
+
+.in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+.email-input {
+    border: 1px solid #e7f7fd;
+    border-radius: 7px;
+    padding: 5px 15px;
+    background-color: #343f42;
+}
+
+.button-seven {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #e6e7e7;
+    background-color: #11ade6;
+    padding: 4px 12px;
+    font-size: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.blogs {
+    background-color: #e7f7fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* padding: 40px; */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.latest {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 0.625rem;
+}
+
+.blog-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
