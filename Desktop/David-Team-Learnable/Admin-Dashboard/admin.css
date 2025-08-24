@@ -234,6 +234,11 @@ body {
   margin-bottom: 20px;
 }
 
+.card-2 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20%;
+}
 .card img {
   height: 50px;
   width: 50px;
@@ -325,20 +330,20 @@ body {
   padding: 20px;
 }
 
-#rate .name {
-  position: absolute;
-  right: 25%;
-  top: 14%;
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .name h5,
 .name h3 {
   margin: 0;
-}
-.icon {
-  position: absolute;
-  right: 5%;
-  top: 16%;
 }
 
 #rate-1 .ic {
@@ -351,69 +356,67 @@ body {
 }
 .name-1 h5,
 .name-1 h3 {
-  margin: 0;
-}
-.icon-1 {
-  position: absolute;
-  right: 5%;
-  top: 31%;
+  margin: 5px;
 }
 
 #text-1 {
   margin: 20px;
 }
-.name-1 {
-  position: absolute;
-  top: 31%;
-  right: 25%;
-}
+
 .name {
   position: absolute;
   right: 30%;
-  top: 26%;
+  top: 15%;
 }
 
 #static {
-  width: 500px;
-  height: 300px;
-  margin:20px;
-  padding:20px;
+  display: flex;
+  position: relative;
+  width: 100%;
 }
 
+#static img {
+  object-fit: none;
+  height: 200px;
+}
+
+#img {
+  width: 300px;
+}
 .upload-box {
-      background: #fff;
-      padding: 30px;
-      border: 2px dashed #007bff;
-      border-radius: 12px;
-      text-align: center;
-      width:70%;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+  position: relative;
+  background: #fff;
+  border: 2px dashed #007bff;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  margin-top: 15%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .upload-box label {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #007bff;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+.upload-box label {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-    .upload-box label:hover {
-      background: #0056b3;
-    }
+.upload-box label:hover {
+  background: #0056b3;
+}
 
-    .upload-box input {
-      display: none;
-    }
+.upload-box input {
+  display: none;
+}
 
-    .file-list {
-      margin-top: 15px;
-      font-size: 14px;
-      color: #333;
-    }
-
+.file-list {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
 
 @media (max-width: 900px) {
   .dr-name {
@@ -506,10 +509,10 @@ body {
   .card {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px 20px 20px 5vh;
+    margin: 50px 20px 20px 5vh;
     gap: 10px;
     width: 100%;
-    top: 100%;
+    top: 50vh;
     width: calc(100% - 50vh - 40px);
     position: relative;
   }
@@ -526,14 +529,25 @@ body {
   }
 
   .name-1 {
-  position: absolute;
-  top: 31%;
-  right: 25%;
-}
+    position: absolute;
+    top: 65%;
+    right: 40%;
+  }
 
-.icon-1 {
-  position: absolute;
-  right: 5%;
-  top: 31%;
-}
+  .icon-1 {
+    position: absolute;
+    right: 10%;
+    top: 66%;
+  }
+  #name-1 {
+    position: none;
+    top: 24%;
+    right: 40%;
+  }
+
+  #name {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+  }
 }
