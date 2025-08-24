@@ -32,3 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+const fileInput = document.getElementById('fileInput');
+    const fileList = document.getElementById('fileList');
+
+    fileInput.addEventListener('change', () => {
+      fileList.innerHTML = ""; // clear previous list
+      const files = fileInput.files;
+      if (files.length > 0) {
+        const ul = document.createElement("ul");
+        for (let file of files) {
+          const li = document.createElement("li");
+          li.textContent = file.name;
+          ul.appendChild(li);
+        }
+        fileList.appendChild(ul);
+      }
+    });
