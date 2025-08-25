@@ -7,7 +7,6 @@
 
 body {
     background-color: #e7f7fd;
-    overflow: auto;
 }
 
 header {
@@ -514,7 +513,7 @@ button {
 @media screen and (max-width: 768px) {
     .slideshow {
         height: auto;
-        flex-direction: column;
+        flex-direction: row;
     }
     .slide, .test {
         min-width: 100%;
@@ -839,10 +838,6 @@ margin-bottom: 2rem;
 font-weight: 600;
 }
 
-.footer-bottom{
-    padding: 0.5rem 3rem;
-}
-
 .footer-input{
     padding: 1rem;
     width: 80%;
@@ -903,5 +898,4 @@ font-weight: 600;
     .footer-main{
     flex-direction: column;
     }
-
 }
