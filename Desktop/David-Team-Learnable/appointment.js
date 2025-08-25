@@ -64,3 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//doctors real time name
+let email;
+let doctorName;
+if (email && email.includes("@")) {
+  adminName = email.split("@")[0];
+
+  document.getElementById("doctorName").textContent = "Dr." + doctorName;
+} else {
+  document.getElementById("doctorName").textContent = "Doctor Tylor";
+}

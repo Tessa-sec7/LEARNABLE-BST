@@ -19,13 +19,14 @@
   <body>
     <div class="header">
       <h1>
-        <i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; &nbsp;&nbsp; Assigned Patients
+        <i class="fa fa-arrow-left" aria-hidden="true" onclick="goBack()"></i
+        >&nbsp; &nbsp;&nbsp; Assigned Patients
       </h1>
     </div>
 
     <div class="container">
       <div class="card">
-        <img src="images/9fbb8f5ea2e00a8cdae432bc91bfbae6ee38dc10.jpg" />
+        <img src="message-images/9fbb8f5ea2e00a8cdae432bc91bfbae6ee38dc10.jpg" />
         <span>
           <p>Jeraid C.</p>
           <p>Appt Date: 2025-08-10</p>
@@ -37,7 +38,7 @@
       </div>
 
       <div class="card">
-        <img src="images/fc22fa7fddb6bb218c6f5e1051d08d4c1d92e96f (1).jpg" />
+        <img src="message-images/fc22fa7fddb6bb218c6f5e1051d08d4c1d92e96f (1).jpg" />
         <span>
           <p>Mary E. Appt</p>
           <p>Appt Date: 2025-08-14</p>
@@ -50,7 +51,7 @@
       </div>
 
       <div class="card">
-        <img src="images/1cb8d8cfe589330fe525481fdb39ee81aa309aca.jpg" />
+        <img src="message-images/1cb8d8cfe589330fe525481fdb39ee81aa309aca.jpg" />
         <span>
           <p>Jayden O.</p>
           <p>Appt Date : 2025-08-05</p>
@@ -61,5 +62,10 @@
         </div>
       </div>
     </div>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
   </body>
 </html>

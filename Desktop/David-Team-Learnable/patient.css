@@ -24,6 +24,9 @@ body {
   box-shadow: 3px 4px 8px;
 }
 
+.header i {
+  cursor: pointer;
+}
 .header h1 {
   padding: 10px;
   padding-left: 100px;
@@ -52,8 +55,6 @@ p {
   font-weight: bold;
 }
 
-
-
 .icon {
   display: flex;
   justify-content: end;
@@ -63,5 +64,5 @@ p {
   margin: 30px;
   font-size: 30px;
   color: var(--side-menu);
-  cursor:pointer;
+  cursor: pointer;
 }
