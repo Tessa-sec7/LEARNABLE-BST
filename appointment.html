@@ -1,107 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Book Appointment</title>
-        <link rel="stylesheet" href="Css/book-appt.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com" /> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    </head>
-    <body>
-    <div class="dashboard-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="logo"><img src="images-icons/Vector.png" alt="logo">MEDORA</div>
-            <div class="menu">
-                <a href="user.html"><i class="fa fa-th-large"></i>Dashboard</a>
-                <a href="appointment.html" class="active"><i class="fa fa-calendar-check"></i>Appointment</a>
-                <a href="#health-record"><i class="fa fa-file-text"></i>Health Record</a>
-                <a href="#messaging"><i class="far fa-message"></i>Messages</a>
-                <a href="#access-control"><i class="far fa-user-circle"></i>Profile & Access Control</a>
-                <div class="move-down">
-                    <a href="#settigs"><i class="fa fa-cog"></i>Settings</a>
-                    <a href="landing.html"><i class="fa fa-sign-out"></i>Logout</a>
-                </div>
-            </div>
-        </aside>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+    <link rel="stylesheet" href="appointment.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+    
+</head>
+<body>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <header>
-            <div class="search-bar">
-                <i class="fa fa-search"></i>
-                <input type="text" placeholder="Search">
-            </div>
-            <div class="nav-links">
-                <button onclick="window.location.href='home.html'">Home</button>
-                <button>Contact</button>
-                <i class="fa fa-bell"></i>
-            </div>
-            <div class="user-info">
-                <img src="images-icons/medora-icon.jpg" alt="User">
-                <div class="user-text">
-                    <span id="userName">Patient Name</span>
-                </div>
-            </div>
-            </header>
+  <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+     <div class="slidebar">
+      <div class="logo-name">
+        <img src="C:\Users\ACER\Desktop\David-Team-Learnable\Admin-Dashboard\images\Vector.png" alt="logo" height="50px" width="50px" />
+        <h1>&nbsp MEDORA</h1>
+      </div>
 
-            <!-- Welcome Section -->
-            <section class="main">
-                <h1>Welcome</h1>
-                <p><u>Don't Miss Out, Schedule Your Appointment Today!</u></p>
-            </section>
+      <p>
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <a href="appointment.html">Dashboard</a>
+      </p>
+      <p class="active">
+        <i class="fa fa-book" aria-hidden="true"></i>
+        <a href="appointment.html">Appointments</a>
+      </p>
+      <p>
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <a href="C:\Users\ACER\Desktop\David-Team-Learnable\Messaging\patient.html"
+          >Paient's <br />
+          Details</a
+        >
+      </p>
+      <p>
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        <a href="#">Settings</a>
+      </p>
 
-            <!-- Departments Section -->
-            <section class="departments">
-                <h2>Departments</h2>
-                <div class="department-icons">
+       <p>
+        <img src="C:\Users\ACER\Desktop\David-Team-Learnable\Admin-Dashboard\images\logout.png" alt="logout" srcset="">
+        <a href="#">Logout</a>
+      </p>
 
-                    <div class="dept">
-                        <img src="images-icons/icon-park_orthopedic.png"  class="dept-icon"/>
-                        <span>Orthopedics</span>
-                    </div>
-
-                    <div class="dept">
-                        <img src="images-icons/medical-icon_i-cardiology.png"  class="dept-icon"/>
-                        <span>Cardiology</span>
-                    </div>
-
-                    <div class="dept">
-                        <img src="images-icons/mdi_allergy.png"  class="dept-icon"/>
-                        <span>Allergy</span>
-                    </div>
-
-                    <div class="dept">
-                        <img src="images-icons/ant-design_medicine-box-filled.png"  class="dept-icon"/>
-                        <span>General Medicine</span>
-                    </div>
-
-                    <div class="dept">
-                        <img src="images-icons/healthicons_endocrinology.png"  class="dept-icon"/>
-                        <span>Endocrinology</span>
-                    </div>
-
-                    <div class="dept">
-                        <img src="images-icons/material-symbols_dermatology-rounded.png"  class="dept-icon"/>
-                        <span>Dermatology</span>
-                    </div>
-
-                    <div class="dept">
-                        <img src="images-icons/urology1.png"  class="dept-icon"/>
-                        <span>Urology</span>
-                    </div>
-
-                    
-                </div>
-            </section>
-
-            <!-- Book Appointment Button -->
-            <button onclick="window.location.href='department.html'" class="book-btn">Book Appointment</button>
-        </div>
     </div>
-    <script src="JavaScript/main.js"></script>
-    </body>
+
+    <div class="main">
+      <div class="search-area">
+        <div class="search-container">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="search" name="Search" id="Search" placeholder="Search" />
+        </div>
+      </div>
+      <div class="dr-name">
+        <button><i class="fa fa-bell" aria-hidden="true"></i></button>
+        <img
+          src="C:\Users\ACER\Desktop\David-Team-Learnable\Admin-Dashboard\images\3a4691c3356039f0b7e07320ef0a6f45fbb0e889 (2).jpg"
+          alt="Dr.Taylor  "
+        />
+        <h3>Dr. Taylor</h3>
+      </div>
+
+      <div class="day">
+        <h1>Today</h1>
+         <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+
+    </div>
+ 
+
+    <div id="list">
+      <div class="appointment-slot-1">
+        <div class="time-info">
+          <h2>9:00 AM</h2>
+          <p>Kingsley Udeh</p>
+        </div>
+    
+         
+        <div id="button">
+          <button id="start-consultation" type="submit">
+          Start Consultation
+        </button>
+      </div>
+      </div>
+
+      
+      
+ 
+      <div class="appointment-slot-2">
+        <div class="time-info">
+          <h2>9:00 AM</h2>
+          <p>David Chinedu</p>
+        </div>
+    
+        <div id="button">
+          <button id="start-consultation" type="submit">
+          Start Consultation
+        </button>
+      </div>
+      </div>
+
+ 
+      
+
+
+      <div class="appointment-slot-3">
+        <div class="time-info">
+          <h2>12:30 PM</h2>
+          <p>Onyeabor Chidera</p>
+        </div>
+    
+        <div id="button">
+          <button id="start-consultation" type="submit">
+          Start Consultation
+        </button>
+      </div>
+      </div>
+    </div>
+
+    <script src="appointment.js"></script>
+</body>
 </html>
