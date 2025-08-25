@@ -39,7 +39,7 @@ form.addEventListener("submit", function(event) {
             window.location.href = "user.html";
             break;
         case "admin":
-            window.location.href = "admin-dashboard.html";
+            window.location.href = "admin.html";
             break;
         default:
             alert("Please select a valid role.");
