@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Dashboard</title>
+    <link rel="stylesheet" href="message.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+    
+</head>
+<body>
+
+  <!-- slide bar section -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+     <div class="slidebar">
+      <div class="logo-name">
+        <img src="message-images/Vector.png" alt="logo" height="50px" width="50px" />
+        <h1>&nbsp MEDORA</h1>
+      </div>
+
+      <p>
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <a href="#">Dashboard</a>
+      </p>
+      <p class="active">
+<i class="fa fa-comments" aria-hidden="true"></i>
+        <a href="#">Message</a>
+      </p>
+      <p>
+<i class="fa fa-book" aria-hidden="true"></i>
+        <a href="#"
+          >Send Note
+      </p>
+    
+       
+      <p class="profile">
+               <i class="fa fa-user" aria-hidden="true"></i>
+
+        <a href="#">Profile</a>
+      </p>
+     
+      
+      <p>
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        <a href="#">Settings</a>
+      </p>
+      <p>
+        <img src="message-images/logout.png" alt="logout" srcset="">
+        <a href="#">Logout</a>
+      </p>
+
+    </div>    
+    
+    
+    
+    <!-- search bar -->
+      <div class="search-area">
+      
+  
+        <div class="search-container">
+
+          
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="search" name="Search" id="Search" placeholder="Search" />
+        </div>
+      </div>
+      <div class="dr-name">
+        <button><i class="fa fa-bell" aria-hidden="true"></i></button>
+      </div>
+
+
+
+  <div class="main">
+      
+
+     <!-- patient cards with details -->
+
+  <div class="container">
+      
+        <div class="message-card">
+        <div class="message-info">
+          <img src="message-images/fc22fa7fddb6bb218c6f5e1051d08d4c1d92e96f (1).jpg" alt="patient">
+        <div class="details">
+            <span>Sandra O.</span>
+            <small>27 Years, Female</small>
+          </div>
+        </div>  
+      </div>
+
+        <div class="message-card">
+         <div class="message-info">
+           <img src="message-images/9fbb8f5ea2e00a8cdae432bc91bfbae6ee38dc10.jpg" alt="patient">
+
+        <div class="details">
+            <span>Jerald C.</span>
+            <small>30 Years, Male</small>
+          </div>
+           </div>
+          </div>
+
+        <div class="message-card">
+          <div class="message-info">
+           <img src="message-images/1cb8d8cfe589330fe525481fdb39ee81aa309aca.jpg" alt="patient">
+        
+        <div class="details">
+            <span>Jayden O.</span>
+            <small>38 Years, Male</small>
+          </div>
+           </div>
+          </div>
+
+        <div class="message-card">
+           <div class="message-info">
+           <img src="message-images/24f2ce1b8677848d41f9b4dcbf53d0c00fe6b73d (2).jpg" alt="patient">
+        
+           <div class="details">
+            <span>Mercy E.</span>
+            <small>41 Years, Female</small>
+          </div>
+           </div>
+          </div>
+
+          <!-- the send message section -->
+          <div class="message-input">
+      <input type="text" id="newMessage" placeholder="Type a message...">
+      <button id="sendBtn">➤</button>
+    </div>
+
+  </div>
+  </div>
+  
+    <script src="message.js"></script>
+    
+  </body>
+</html>

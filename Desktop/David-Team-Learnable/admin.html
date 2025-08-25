@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+    
+</head>
+<body>
+  <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+     <div class="slidebar">
+      <div class="logo-name">
+        <img src="admin-images/Vector.png" alt="logo" height="50px" width="50px" />
+        <h1>&nbsp MEDORA</h1>
+      </div>
+
+      <p class="active">
+
+
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <a href="admin.html">Dashboard</a>
+      </p>
+      <p>
+        <img src="admin-images/Vector (7).png" > 
+        <a href="doctor-dashboard.html">Doctors</a>
+      </p>
+      <p>
+         <img src="admin-images/Vector (6).png" alt="Profile" srcset="">
+        <a href="patient.html">
+          Patient
+      </p>
+      <p>
+        <img src="admin-images/Vector (4).png" alt="Appointment" srcset="">
+        <a href="appointment.html">Appointment</a>
+      </p>
+      <p>
+               <i class="fa fa-user" aria-hidden="true"></i>
+
+        <a href="#">Profile</a>
+      </p>
+      <p>
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        <a href="#">Settings</a>
+      </p>
+      <p>
+        <img src="admin-images/logout.png" alt="logout" srcset="">
+        <a href="#">Logout</a>
+      </p>
+
+    </div>
+
+    <div class="main">
+      <div class="search-area">
+        <div class="search-container">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="search" name="Search" id="Search" placeholder="Search" />
+        </div>
+      </div>
+      <div class="dr-name">
+        <button><i class="fa fa-bell" aria-hidden="true"></i></button>
+        <img
+          src="admin-images/3a4691c3356039f0b7e07320ef0a6f45fbb0e889 (2).jpg"
+          alt="Dr.Taylor  "
+        />
+        <h3 id="adminName">Dr. </h3>
+      </div>
+
+      
+      <div class="totals">
+        <div class="cards">
+            <h3><img src="admin-images/Vector (7).png" > Total Doctors</h3>
+            <p>40</p>
+        </div>
+        <div class="cards">
+            <h3> <img src="admin-images/Vector (6).png" > Total Patient</h3>
+            <p>320</p>
+        </div>
+        <div class="cards">
+            <h3> <img src="admin-images/Vector (5).png" > Total Transaction</h3>
+            <p>250,000</p>
+        </div>
+        <div class="cards">
+            <h3> <img src="admin-images/Vector (4).png" > Total Appointment</h3>
+            <p>38</p>
+        </div>
+      </div>
+
+      <div class="content">
+    <div class="card">
+        <div class="appoint">
+          <h2>Appointment <span> <a href="#"> View All</a></span></h2>
+          </div>
+         
+
+          <div class="appointment-list">
+        <img
+          src="admin-images/93050e6afaf4ab99db5fe22680862fa537ecd6eb (1).jpg"
+          alt="appointee"
+        />
+        <h3>Dr Sarah <div class="hh">
+          <h2>Today <br>9:00</h2>
+          
+        </div> </h3>
+        <p>Gynecologist</p>
+
+        </div>
+      
+        
+         <div class="appointment-list">
+        <img
+          src="admin-images/c36269c55d3caa4a4beb3eb2acac4e0153bcb494 (1).jpg"
+          alt="appointee"
+        />
+        <h3>Dr Taylor <div class="hh">
+          <h2>Today <br>9:30</h2>
+          
+        </div> </h3>
+        <p>Orthopedist</p>
+
+        </div>
+        
+          <div class="appointment-list">
+        <img
+          src="admin-images/5e9dc1bf54494a750e0e28ed5b1fd97268e36585.jpg"
+          alt="appointee"
+        />
+        <h3>Dr Juliet <div class="hh">
+          <h2>Today <br>10:00</h2>
+          
+        </div> </h3>
+        <p>Neurologist</p>
+
+        </div>
+      
+
+          <div class="appointment-list">
+        <img
+          src="admin-images/dbef1a3df67178216ad5c942d8ae6a49d0d4cc28.jpg"
+          alt="appointee"
+        />
+        <h3>Dr Jason </h3><div class="hh">
+          <h2>Today <br>10:40</h2>
+          
+        </div>
+        <p>Endocrinologist</p>
+      </div>
+      </div>
+        
+
+        <div class="card">
+          <div class="review-head">
+            <legend>
+          <h2>Patient Reviews <span> <a href="#">View All</a></span></h2>
+          </legend></div>
+          <div id="rate">
+            <div class="profile-1">
+          <img src="admin-images/fc22fa7fddb6bb218c6f5e1051d08d4c1d92e96f (1).jpg">
+          <div class="name-1" id="name-1">
+           <h3> Sandra O. </h3> <h5>July 29, 2025</h5>
+          </div>
+          <div class="icon-1" id="name"> 5.0 <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          </div>
+   
+        <span id="text">Amazing experience!! The doctor was friendly and explained everything clearly".</span>
+        </div>
+
+        <div id="rate-1">
+          <div class="profile">
+          <img src="admin-images/9fbb8f5ea2e00a8cdae432bc91bfbae6ee38dc10.jpg">
+          <div class="name-1">
+          <h3> Jeraid C. </h3> <h5>July 29, 2025</h5>
+          </div class="ic">
+          <div class="icon-1"> 5.0 <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+   
+        <span id="text-1">Amazing experience!! The doctor was friendly and explained everything clearly".</span>
+        </div>
+        </div>
+             
+
+
+        <div class="card">
+          <legend>
+          <h2> Most Visited Dept.  <span> <a href="#">View All</a></span></h2>
+          </legend>
+            <div id="static">
+            <img src="admin-images/statics.PNG" id="img">
+        </div>
+        </div>
+
+        <div class="card">
+          <legend>
+          <h2>Documents <span> <a href="#">View All</a></span></h2>
+          </legend>
+
+          <div class="upload-box">
+    <h2>Select a Document</h2>
+    <input type="file" id="fileInput" multiple>
+    <label for="fileInput">Choose File(s)</label>
+    <div class="file-list" id="fileList"></div>
+  </div>
+
+        </div>
+      </div>
+      </div>
+    <script src="admin.js"></script>
+
+</body>
+</html>
