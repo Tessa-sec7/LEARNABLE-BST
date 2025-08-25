@@ -7,6 +7,7 @@
 
 body {
     background-color: #e7f7fd;
+    overflow: auto;
 }
 
 header {
@@ -394,34 +395,65 @@ button {
 
 .bg2 {
     background-image: url(./Images/bg2.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .bg3 {
     background-image: url(./Images/bg3.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .bg4 {
     background-image: url(./Images/bg4.jpg);
+    position: relative;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
+}
+
+.bg2::before,
+.bg3::before,
+.bg4::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(17, 173, 230, 0.4);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bg2 > *, .bg3 > *, .bg4 > * {
+    position: relative;
+    z-index: 2;
+}
+
+.slideshow-screen{
+    overflow: hidden;
+    padding-bottom: 40px;
 }
 
 .slideshow {
     display: flex;
     flex-direction: row;
+    color: #e7f7fd;
     font-size: 2rem;
     gap: 10px;
     overflow: hidden;
     width: 100%;
+    transition: transform 0.5s ease;
     position: relative;
-    height: 300px;
 }
 
 /* did you know section */
 .slide {
     align-items: left;
     min-width: 100%;
-    transition: transform 0.5s ease;
     flex-shrink: 0;
     background-size: cover;
     background-position: center;
@@ -442,9 +474,20 @@ button {
     background-color: #11ade6;
     overflow: hidden;
     min-width: 100%;
-    transition: transform 0.5s ease;
     flex-shrink: 0;
     padding: 5px;
+}
+
+.test1{
+    background-color: #11ADE6;
+}
+
+.test2{
+    background-color: #0f9dd1;
+}
+
+.test3{
+    background-color: #0c7ba3;
 }
 
 .middle {
@@ -459,6 +502,13 @@ button {
     justify-content: space-between;
     padding: 7px;
     gap: 20px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
