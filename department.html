@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="Css/book-appt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-dept"><img src="images-icons/logo2.png" alt="logo">MEDORA</div>
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <nav class="nav">
+                <a href="home.html" class="nav-btn">Home</a>
+                <a href="#contact" class="nav-btn disable">Contact</a>
+                <i class="fa fa-bell"></i>
+                <span class="profile">
+                    <img src="images-icons/medora-icon.jpg" alt="Profile">
+                    <div class="profile-info">
+                        <p class="name" id="userName">Patient Name</p>
+                        <p class="email" id="userEmail">patientemail@gmail.com</p>
+                    </div>
+                </span>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <h2><u>Select Department:</u></h2>
+            <div>Please Choose The Department You Want To Book An Appointment With.</div>
+
+            <label for="department" class="label">Department</label>
+            <select id="department" class="dropdown" required>
+                <option>Select Department</option>
+                <option>Orthopedics</option>
+                <option>General Medicine</option>
+                <option>Cardiology</option>
+                <option>Endocrinology</option>
+                <option>Allergy</option>
+                <option>Urology</option>
+                <option>Dermatology</option>
+            </select>
+
+            <button class="next-btn" id="next-btn">Next</button>
+        </main>
+    </div>
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>
